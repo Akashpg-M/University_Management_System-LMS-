@@ -1,0 +1,116 @@
+/* Base styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Dashboard container */
+.teacher-dashboard {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 200px;
+    padding-top:2000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1, .sidebar h3 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+}
+
+.sidebar button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #004080;
+    box-shadow: 0 4px 8px rgba(0, 64, 128, 0.3);
+}
+
+/* Main content */
+.main-content {
+    padding-top:200px;
+
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.main-content h3, .main-content h4 {
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+/* Forms */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
