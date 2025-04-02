@@ -7,15 +7,6 @@ const instance = axios.create({
     },
 });
 
-// Optionally, you can add interceptors here
-// instance.interceptors.request.use(config => {
-//     // Modify config before sending request
-//     return config;
-// }, error => {
-//     // Handle error
-//     return Promise.reject(error);
-// });
-
 export default instance;
 
 

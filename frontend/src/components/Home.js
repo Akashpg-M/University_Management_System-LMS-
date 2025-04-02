@@ -8,7 +8,7 @@ const Home = () => {
             <h1>Welcome to the University Management System</h1>
             <p>
                 This application allows students, teachers, and admins to manage their respective
-                functionalities efficiently.
+                tasks efficiently.
             </p>
             <div className="home-buttons">
                 <Link to="/login">
@@ -18,6 +18,7 @@ const Home = () => {
                     <button className="home-button">Sign Up</button>
                 </Link>
             </div>
+            
             <div className="home-description">
                 <h3>Features:</h3>
                 <ul>

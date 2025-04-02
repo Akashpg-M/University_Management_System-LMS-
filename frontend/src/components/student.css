@@ -1,189 +1,148 @@
-
-/* Base styling */
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     color: #333;
 }
 
-/* Dashboard container */
+/* Dashboard Container */
 .student-dashboard {
     display: flex;
-    padding-top: 100px;
-    width: 90%;
     max-width: 1200px;
-    min-height: 80vh;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-/* Sidebar styling */
+/* Sidebar */
 .sidebar {
-    background-color: #34495e;
-    color: #ecf0f1;
-    padding: 20px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    padding: 20px;
+    background: #f1f3f5;
+    border-right: 2px solid #ddd;
 }
 
-.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4 {
-    margin: 10px 0;
+.sidebar h1, .sidebar h2, .sidebar h3 {
+    text-align: center;
+    color: #007bff;
 }
 
-.sidebar h1 {
-    font-size: 1.5em;
-    font-weight: bold;
+.sidebar h3 {
+    margin-top: 20px;
+    font-size: 18px;
 }
 
-.sidebar h2, .sidebar h3 {
-    font-size: 1.2em;
-    font-weight: normal;
-}
-
-/* Buttons */
-button {
-    background-color: #2ecc71;
-    color: #fff;
-    padding: 10px 15px;
+/* Semester and Subject Buttons */
+.semester-button, .subject-button, .action-button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
     border: none;
-    border-radius: 5px;
-    margin: 5px 0;
+    border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: #007bff;
+    color: white;
 }
 
-button:hover {
-    background-color: #27ae60;
+.semester-button:hover, .subject-button:hover, .action-button:hover {
+    background-color: #0056b3;
 }
 
-.semester-button {
-    width: 100%;
-    text-align: left;
-}
-
-.subject-button {
-    width: 100%;
-    text-align: left;
-}
-
-.action-button {
-    width: 100%;
-    text-align: left;
-    background-color: #3498db;
-}
-
-.action-button:hover {
-    background-color: #2980b9;
-}
-
-.submit-button {
-    background-color: #e67e22;
-}
-
-.submit-button:hover {
-    background-color: #d35400;
-}
-
-/* Textarea */
+/* Leave Request */
 .leave-textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    resize: none;
-    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-/* Main content */
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Main Content */
 .main-content {
     flex-grow: 1;
     padding: 20px;
-    color: #333;
-}
-
-.main-content p {
-    margin: 0;
 }
 
 .subject-details {
-    background-color: #f8f9fa;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.subject-details h3 {
-    color: #34495e;
+/* Back Button */
+.back-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
     margin-top: 10px;
 }
 
-.subject-details p {
-    font-size: 1em;
-    margin-top: 5px;
+.back-button:hover {
+    background-color: #c82333;
 }
 
-/* Lists */
+/* Attendance and Grade Display */
+h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+p {
+    background: #f1f3f5;
+    padding: 8px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Assignments & Resources */
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 li {
-    background-color: #ecf0f1;
+    background: #e9ecef;
     padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    color: #333;
+    border-radius: 6px;
+    margin-bottom: 5px;
 }
 
+/* Links */
 a {
-    color: #3498db;
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: #007bff;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #2980b9;
-}
-
-/* Back button */
-.back-button {
-    margin-top: 20px;
-    background-color: #bdc3c7;
-    color: #34495e;
-}
-
-.back-button:hover {
-    background-color: #95a5a6;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .student-dashboard {
-        flex-direction: column;
-    }
-   
-    .sidebar {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .main-content {
-        width: 100%;
-        padding: 15px;
-    }
+    text-decoration: underline;
 }

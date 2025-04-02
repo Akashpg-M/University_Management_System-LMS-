@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../axiosConfig'; // Import the configured Axios instance
 import { useLocation } from 'react-router-dom';
-// import './student.css';
+import './student.css';
 
 const StudentDashboard = () => {
     const { state } = useLocation();
@@ -127,6 +127,8 @@ const StudentDashboard = () => {
     //         alert('Could not fetch assignments. Please try again later.');
     //     }
     // };
+
+    
     const fetchAssignments = async (subjectId) => {
         try {
             const response = await axios.get(`http://localhost:5000/api/student/${studentId}/subjects/${subjectId}/assignments`);

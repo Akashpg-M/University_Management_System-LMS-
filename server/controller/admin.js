@@ -49,7 +49,7 @@ router.get('/courses', async (req, res) => {
 router.get('/leave-requests', async (req, res) => {
     try {
         const [leaveRequests] = await db.query(`
-            SELECT l.leave_request_id, s.name as student_name, l.status 
+            SELECT l.leave_request_id AS id, s.name as student_name, l.status 
             FROM LeaveRequests l 
             JOIN Students s ON l.student_id = s.student_id;
         `);
@@ -84,16 +84,6 @@ router.post('/leave-requests/reject/:id', async (req, res) => {
     }
 });
 
-// Get all clubs
-router.get('/clubs', async (req, res) => {
-    try {
-        const [clubs] = await db.query('SELECT * FROM Clubs'); // Fixed destructuring
-        res.json(clubs);
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Server Error');
-    }
-});
 
 // Get important dates
 router.get('/important-dates', async (req, res) => {
